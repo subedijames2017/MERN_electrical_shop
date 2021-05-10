@@ -92,7 +92,11 @@ function LoginPage(props) {
                   }
                   placeholder="Enter your email"
                   type="email"
-                  value={values.email}
+                  value={
+                    values.email && values.email !== "undefined"
+                      ? values.email
+                      : ""
+                  }
                   onChange={handleChange}
                   onBlur={handleBlur}
                   className={

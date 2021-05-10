@@ -32,7 +32,6 @@ function App() {
             component={Auth(DetailProductPage, null)}
           />
           <Route exact path="/user/cart" component={Auth(CartPage, true)} />
-          <Route exact path="/history" component={Auth(HistoryPage, true)} />
         </Switch>
       </div>
       <Footer />
